@@ -1,8 +1,8 @@
 {
-  "name": "Train — Fitness Tracker",
-  "short_name": "Train",
+  "name": "Routine",
+  "short_name": "Routine",
   "description": "Daily fitness tracker — two-a-day sessions, habit streak, progress log",
-  "start_url": "/",
+  "start_url": "/routine-app/",
   "display": "standalone",
   "background_color": "#0a0a0a",
   "theme_color": "#0a0a0a",
