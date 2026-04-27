@@ -1,4 +1,4 @@
-const CACHE = 'train-v3';
+const CACHE = 'train-v4';
 const BASE = '/routine-app/';
 const ASSETS = [
   BASE,
