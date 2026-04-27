@@ -54,7 +54,7 @@
   /* Bottom nav */
   .nav {
     display: flex; justify-content: space-around; align-items: center;
-    padding: 12px 0 calc(var(--safe-bottom) + 12px);
+    padding: 12px 0 calc(env(safe-area-inset-bottom, 20px) + 12px);
     background: var(--surface); border-top: 1px solid var(--border);
     flex-shrink: 0;
   }
@@ -240,7 +240,7 @@
 <body>
 <div id="app">
   <div class="app-header">
-    <div class="app-title">ROUTINE<span>.</span></div>
+    <div class="app-title">TRAIN<span>.</span></div>
     <div class="header-streak">
       <div class="streak-num" id="header-streak">0</div>
       <div class="streak-label">day streak</div>
