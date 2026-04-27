@@ -763,7 +763,7 @@ renderToday();
 <!-- Service Worker Registration -->
 <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js').catch(() => {});
+  navigator.serviceWorker.register('/routine-app/sw.js', { scope: '/routine-app/' }).catch(() => {});
 }
 </script>
 </body>

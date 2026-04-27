@@ -1,5 +1,12 @@
 const CACHE = 'train-v1';
-const ASSETS = ['/', '/index.html', '/manifest.json'];
+const BASE = '/routine-app/';
+const ASSETS = [
+  BASE,
+  BASE + 'index.html',
+  BASE + 'manifest.json',
+  BASE + 'icons/icon-192.png',
+  BASE + 'icons/icon-512.png',
+];
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -24,7 +31,7 @@ self.addEventListener('fetch', e => {
         const clone = res.clone();
         caches.open(CACHE).then(c => c.put(e.request, clone));
         return res;
-      }).catch(() => caches.match('/index.html'));
+      }).catch(() => caches.match(BASE + 'index.html'));
     })
   );
 });
